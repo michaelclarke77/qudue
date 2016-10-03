@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/essay" />
+
+    <TextView
+        android:id="@+id/essayTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/moduleTitle"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/essayTitle" />
+
+
+    <TextView
+        android:id="@+id/wordCount"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moduleTitle" />
+
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/essayTitle"
+        android:layout_marginEnd="25dp"
+        android:text="@string/deadline"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/daysToDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/deadline"
+        android:layout_marginEnd="28dp"
+        android:text="19 days"
+        android:textColor="@color/colorAccent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/daysToDeadline"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray" />
+
+
+</RelativeLayout>

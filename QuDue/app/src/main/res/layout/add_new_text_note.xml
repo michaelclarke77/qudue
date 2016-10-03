@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddNewNote">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/newNoteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/new_note_text"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/titleUnderline"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/newNoteTitle"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/newNoteTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleUnderline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/newNoteTitleLabel"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/noteTitleLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newNoteTitleLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:cursorVisible="true"
+            android:singleLine="true"
+            android:editable="true"
+            android:background="@drawable/custom_edit_text"
+            android:padding="4dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:maxLength="35"
+            />
+
+        <TextView
+            android:id="@+id/newNoteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noteTitleLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/newNoteLabel"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/notePreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:layout_below="@+id/newNoteLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:cursorVisible="true"
+            android:editable="true"
+            android:background="@drawable/custom_edit_text"
+            android:padding="4dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            />
+
+
+        <Button
+            android:id="@+id/saveTextNote"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notePreview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:onClick="onSaveClick"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:text="@string/Save" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

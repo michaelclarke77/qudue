@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddNewAudioNote">
+
+    <TextView
+        android:id="@+id/newNotePhotoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/new_note_photo"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/titleUnderline"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/newNotePhotoTitle"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/newNoteTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleUnderline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/newNoteTitleLabel"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/noteTitleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newNoteTitleLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:cursorVisible="true"
+        android:singleLine="true"
+        android:editable="true"
+        android:background="@drawable/custom_edit_text"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:maxLength="35"
+        />
+
+    <TextView
+        android:id="@+id/Orlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteTitleLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/or"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imgCamera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/ic_photo_camera_white_48dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/noteTitleLabel"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imgGallery"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_photo_white_48dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/noteTitleLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="90dp"
+        android:padding="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imgCamera"
+        android:layout_margin="50dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        />
+
+
+    <Button
+        android:id="@+id/saveNote"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="onSaveClick"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:text="@string/Save" />
+
+</RelativeLayout>

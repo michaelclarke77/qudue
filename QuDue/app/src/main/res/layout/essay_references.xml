@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EssayReferencesFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/essaySourceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/source_title"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/titleUnderline"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/essaySourceTitle"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/essaySources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleUnderline"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:cursorVisible="false"
+            android:singleLine="false"
+            android:editable="false"
+            android:background="@drawable/custom_edit_text"
+            android:padding="4dp"
+            android:hint="There is nothing here yet. Upload your sources using the QuDue desktop application."
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>
